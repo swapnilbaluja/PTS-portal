@@ -1,0 +1,75 @@
+.navbar-default{
+    background-color: #0a1612;
+    border-bottom:3px solid #f7ce3e;
+    color: white;
+}
+.navbar-default .navbar-brand{
+    color: white;
+    font-family: sans-serif;
+}
+.navbar-default .navbar-brand:hover,.navbar-default .navbar-brand:focus{
+    color: white;
+}
+.navbar-default .navbar-nav > ul{
+    color: white;
+}
+.navbar-default .navbar-nav > li > a{
+    color: white;
+    font-family: sans-serif;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
+    background-color: #f7ce3e;
+    color: #0a1612;
+    font-family: sans-serif;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{
+    color: white;
+    background-color: #1a2930;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus{
+    color: white;
+    background-color: #1a2930;
+}
+.navbar-default .navbar-toggle:hover,.navbar-default .navbar-toggle:focus{
+    background-color: #1a2930;
+}
+
+.dropdown{
+    font-family: sans-serif;
+}
+.dropdown-menu{
+    background-color: #0a1612;
+    
+}
+.dropdown-menu > li > a{
+    
+    color: white;
+    font-family: sans-serif;
+}
+
+.dropdown-menu > li > a:hover{
+    background-color: #1a2930;
+    color: white;
+}
+.container{
+    padding-top: 100px;
+}
+@media only screen and (max-width: 766px) {
+.in ul li a {color: #fff!important;}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus
+    {color: white;
+}
+    .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
+    background-color: #f7ce3e;
+    color: #0a1612;
+    font-family: sans-serif;
+}
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #0a1612;
+    background-color: #f7ce3e;
+  }
+}

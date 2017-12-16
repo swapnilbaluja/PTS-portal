@@ -1,0 +1,132 @@
+ div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p,
+a, img,b, u, i, center,
+dl, dt, dd, ol, ul, li, tbody, tfoot, thead, tr, th, td,
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+ol, ul {
+	list-style:none;
+
+}
+
+
+h1, h2, h3, h4, h5, h6,.single{
+	font-weight: normal;
+	text-align:center;
+
+}
+strong {
+	font-weight: bold;
+}
+
+textarea {
+	 overflow: auto;
+}
+/* main-content
+------------------------------------------------------------------------------*/
+
+.content {
+	overflow:hidden;
+	padding-bottom: 0px;
+}
+
+.main-content {
+	
+	width: 100%;
+	
+}
+
+
+
+
+
+.slider-con {
+	
+	margin-right: 0px;
+}
+
+.slider-con .slide li {
+	padding: 0 20px 20px 0;
+	float: left;
+}
+
+.slider-con .slide li img{
+	border-radius: 6px;
+}
+
+.slider-con .bx-pager {
+	text-align: center;
+	padding-top: 18px;
+}
+
+.slider-con .bx-pager-item {
+	display: inline-block;
+	padding: 0 2px;
+}
+
+.slider-con .bx-pager-item a {
+	width: 16px;
+	text-indent: -999em;
+	height: 17px;
+	display: block;
+	
+}
+
+.slider-con .bx-pager-item a.active,
+.slider-con .bx-pager-item a:hover {
+	background-position: -16px 0;
+}
+
+.slider-con .bx-controls-direction {
+	display: none;
+}
+
+.posts-con article.last {
+	border-bottom: none;
+}
+
+.posts-con .current-date {
+	margin-top: 9px;
+}
+
+.posts-con h3 {
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 22px;
+	padding-top: 4px;
+	padding-bottom: 22px;
+}
+
+.posts-con .info {
+	overflow: hidden;
+}
+
+.posts-con .info-line {
+	font-size: 16px;
+	line-height: 20px;
+	padding-bottom: 20px;
+}
+
+.posts-con .info-line .time {
+	padding: 0 20px 0 25px;
+	background: url(../images/ico_time.png) no-repeat 0 3px;
+	display: inline-block;
+}
+
+.posts-con .info-line .place {
+	padding: 0 20px 0 25px;
+	background: url(../images/ico_place.png) no-repeat 0 3px;
+	display: inline-block;
+}
+
+h1.single{
+	margin: 0 15px 0 15px;
+}
+
