@@ -70,9 +70,9 @@ if(isset($_POST['upload']))
       <ul class="nav navbar-nav">
         <li ><a href="add_notification.php"><span class="glyphicon glyphicon-user"></span> Add Notification</a></li>
         <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-education"></span> Course</a>
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-education"></span> INSERT MARKS</a>
           <ul class="dropdown-menu">
-            <li><a href="coursescheme.php">Course Scheme</a></li>
+            <li><a href="insert.php">INSERT</a></li>
             <li><a href="#">Page 1-2</a></li>
             <li><a href="#">Page 1-3</a></li>
           </ul>
@@ -107,6 +107,7 @@ if(isset($_POST['upload']))
  <div class="col-md-12 contable">
    
 <form action ="upload.php" method="POST" enctype="multipart/form-data">
+
 CLASS:<input type='text'  name='class' size="35"required><br><br>
 SUBJECT:<input type='text'  name='subject' size="35"required><br><br>
 <p><input type="file" name="file"/></p>

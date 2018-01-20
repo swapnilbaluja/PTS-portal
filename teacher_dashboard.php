@@ -105,9 +105,9 @@ if(!isset($_SESSION['name'])) {
         <li ><a href="add_notification.php">
           <span class="glyphicon glyphicon-comment"></span> ADD Notification</a></li>
         <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-education"></span> Course</a>
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-education"></span> Insert Marks</a>
           <ul class="dropdown-menu">
-            <li><a href="coursescheme.php">Course Scheme</a></li>
+            <li><a href="insert.php">Insert</a></li>
             <li><a href="#">Page 1-2</a></li>
             <li><a href="#">Page 1-3</a></li>
           </ul>
@@ -149,34 +149,7 @@ echo $_SESSION["name"];
 
 ?>
 </h1>
-        <h4>You have 
-        <?php
-        $u=$_SESSION["name"];
-  
-$conn = new mysqli("localhost", "root","", "pts");
-   if($conn)
-    {
-      $cmd="SELECT * FROM teacherlogin where tname='$u'";
-
-      $result=$conn->query($cmd);
-      
-      if($result=$conn->query($cmd))
-      {
-        $tnumber=$result->fetch_array();
-        $tnumber=$tnumber[2];
         
-        echo "<a href='notification.php' style='color: #b56357'> 0 notification</a>";
-        }
-        else
-        {
-        echo "query problem!!";
-    }
-        }
-        else
-        {
-        echo "connectionproblem!!";
-        }
-        ?></h4>
 </div>
 <div class="row">
     <div class="calender">

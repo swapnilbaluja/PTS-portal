@@ -1,0 +1,13 @@
+
+                    
+                    $result1=$conn->query($cmd1);
+                    $result2=$conn->query($cmd2);
+                    $result3=$conn->query($cmd3);
+
+
+
+                    $file_name=$_FILES['file']['name'];
+                $file_type=$_FILES['file']['type'];
+                $file_size=$_FILES['file']['size'];
+                $file_temp_loc=$_FILES['file']['tmp_name'];
+               	$file_store="upload/".$file_name;

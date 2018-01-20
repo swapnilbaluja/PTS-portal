@@ -149,22 +149,24 @@ if(isset($_POST['b1']))
     setcookie("user",$u,mktime()+10);
 
     $p=$_POST['psw'];
+   
 
 
 $conn = new mysqli("localhost", "root","", "pts");
    if($conn)
     {
       $cmd="SELECT * FROM student_login where uname='$u' and pwd='$p'";
-      $cmd1="SELECT * FROM teacherlogin where tname='$u' and pwd='$p'";
-      
+      $cmd1="SELECT * FROM teacherlogin where tname like'$u' and pwd='$p'";
+      $cmd2="SELECT * FROM admin where a_id='$u' and pwd='$p'";
 
       $result=$conn->query($cmd);
       $result1=$conn->query($cmd1);
+      $result2=$conn->query($cmd2);
       
       
       if($result=$conn->query($cmd))
       {
-        echo $result->num_rows;
+        
                 if($result->num_rows>0)
                 {
                   $_SESSION["name"] = $u;
@@ -175,10 +177,14 @@ $conn = new mysqli("localhost", "root","", "pts");
                  $_SESSION["name"] = $u;
                 header('Location:teacher_dashboard.php');
               }
-              
+              else if($result2->num_rows>0)
+              {
+                $_SESSION["name"] = $u;
+                header('Location:admin.php');
+              }
               else
               {
-                echo "<p style='color:red; align:center;' >"."Invalid user name or password !"."</p>";
+                echo "<center><p style='color:red; align:center;' >"."Invalid user name or password !"."</p>";
               }
       }
 

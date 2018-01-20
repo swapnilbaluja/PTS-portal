@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Tatti school</title>
+  <title>ABC school</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/main.css">
   <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="0">
@@ -128,6 +131,7 @@
     
   <h1 class="text-center">THAPAR UNIVERSITY</h1>
     <br>
+    
   <div class="motto"><img src="motto.jpg"></div>
   
 </div>
@@ -146,9 +150,66 @@
 </div>
 <div id="section5" class="container col-md-12 col-sm-12">
   <h1>Contact</h1>
+  <div class="container-contact100">
+
+		<div class="wrap-contact100">
+			<form class="contact100-form validate-form" action ="index.php" method="POST">
+				<span class="contact100-form-title">
+					Send Us A Message
+				</span>
+
+				<div class="wrap-input100 validate-input" data-validate="Please enter your name">
+					<input class="input100" type="text" name="name" placeholder="Full Name">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate = "Please enter your email: e@a.x">
+					<input class="input100" type="text" name="email" placeholder="E-mail">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate = "Please enter your phone">
+					<input class="input100" type="text" name="phone" placeholder="Phone">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate = "Please enter your message">
+					<textarea class="input100" name="message" placeholder="Your Message"></textarea>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="container-contact100-form-btn">
+					<button class="contact100-form-btn">
+						<span>
+							<i class="fa fa-paper-plane-o m-r-6" aria-hidden="true" name ="sub"></i>
+							Send
+						</span>
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+  <?php
+  if(isset($_POST['sub']))
+  {
+    $msg='Name : '.$_POST['name']."\n"
+    .'Email: '.$_POST['email']."\n"
+    .'Phno: '.$_POST['phone']."\n"
+    .'Message: '.$_POST['message']."\n";
+    if(mail('me@example.com','Contact Us Form',$msg)){
+    echo '<script language="javascript">';
+              echo 'alert("Send  !")';
+              echo '</script>';
+            }
+            else
+            {
+               echo '<script language="javascript">';
+              echo 'alert("failed  !")';
+              echo '</script>';
+            }
+  }
+  ?>
   
-</div>
-    
     
 </body>
 </html>
