@@ -59,7 +59,7 @@ if(!isset($_SESSION['name'])) {
 
     session_start();
     $u=$_SESSION["name"];
-  $conn = new mysqli("139.59.88.82", "root","test@123", "pts");
+  $conn = new mysqli("139.59.42.21", "root","test@123", "pts");
    if($conn)
     {
       $cmd="SELECT * FROM student_login where uname='$u'";
@@ -387,7 +387,7 @@ if(!isset($_SESSION['name'])) {
 
         <?php
        
-mysql_connect("139.59.88.82","root","test@123");
+mysql_connect("139.59.42.21","root","test@123");
 mysql_select_db("pts");
 $std=$_SESSION["class"];
 $query=mysql_query("select * from assignment where std=$std");

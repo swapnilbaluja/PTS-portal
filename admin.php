@@ -82,7 +82,7 @@ if(!isset($_SESSION['name'])) {
 </style>
 
 <head>
-  <title>Bootstrap Example</title>
+  <title>ABC SCHOOL</title>
   
 </head>
 <body>

@@ -151,7 +151,7 @@ Teacher-NUMBER:<input type='text'  name='tnumber' size="35"required><br><br>
 
 Teacher-Name:<input type='text'  name='tname'  value=
 <?php
-$conn = new mysqli("139.59.88.82", "root","test@123", "pts");
+$conn = new mysqli("139.59.42.21", "root","test@123", "pts");
 if(isset($_POST['upload']))
 				{
 					
@@ -195,7 +195,7 @@ if(isset($_POST['upload']))
 <?php
 if(isset($_POST['del']))
 				{
-					$conn = new mysqli("139.59.88.82", "root","test@123", "pts");
+					$conn = new mysqli("139.59.42.21", "root","test@123", "pts");
 					$tn=$_POST['tnumber'];
 					 if($conn)
 					 {

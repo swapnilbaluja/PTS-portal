@@ -62,7 +62,7 @@ if(!isset($_SESSION['name'])) {
     session_start();
     $u=$_SESSION["name"];
   
-$conn = new mysqli("139.59.88.82", "root","test@123", "pts");
+$conn = new mysqli("139.59.42.21", "root","test@123", "pts");
    if($conn)
     {
       $cmd="SELECT * FROM student_login where uname='$u'";
@@ -388,7 +388,7 @@ $conn = new mysqli("139.59.88.82", "root","test@123", "pts");
         </thead>
         <tbody>
         <?php
-$conn = new mysqli("139.59.88.82", "root","test@123", "pts");
+$conn = new mysqli("139.59.42.21", "root","test@123", "pts");
    if($conn)
     {
         

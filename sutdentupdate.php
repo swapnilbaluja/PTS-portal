@@ -151,7 +151,7 @@ if(!isset($_SESSION['name'])) {
 ---------------------------------------------------------------------------------------------------<BR>
 ROLL-NUMBER:<input type='text'  name='rnumber' size="35"required><br><br>
 NAME       :<input type='text'  name='name' size="35" value=<?php
-$conn = new mysqli("139.59.88.82", "root","test@123", "pts");
+$conn = new mysqli("139.59.42.21", "root","test@123", "pts");
 if(isset($_POST['upload']))
 				{
 					
@@ -230,7 +230,7 @@ if(isset($_POST['upload']))
 
 
 CLASS:<input type='text'  name='class' size="35" value=<?php
-$conn = new mysqli("139.59.88.82", "root","test@123", "pts");
+$conn = new mysqli("139.59.42.21", "root","test@123", "pts");
 if(isset($_POST['upload']))
 				{
 					
@@ -267,7 +267,7 @@ if(isset($_POST['upload']))
 				
 ?>><br><br>
 SECTION:<input type='text'  name='section' size="35" value=<?php
-	$conn = new mysqli("139.59.88.82", "root","test@123", "pts");
+	$conn = new mysqli("139.59.42.21", "root","test@123", "pts");
 if(isset($_POST['upload']))
 				{
 					
@@ -307,7 +307,7 @@ if(isset($_POST['upload']))
 <CENTER>CONTACT INFORMATION</CENTER>
 ---------------------------------------------------------------------------------------------------<BR>
    STUDENT-LANDLINE   :<input type='text'  name='s_landline' size="35" value=<?php
-	$conn = new mysqli("139.59.88.82", "root","test@123", "pts");
+	$conn = new mysqli("139.59.42.21", "root","test@123", "pts");
 if(isset($_POST['upload']))
 				{
 					
@@ -345,7 +345,7 @@ if(isset($_POST['upload']))
 ?>><br><br>
 STUDENT-MAIL:<input type='text'  name='s_mail' size="35"
 value=<?php
-	$conn = new mysqli("139.59.88.82", "root","test@123", "pts");
+	$conn = new mysqli("139.59.42.21", "root","test@123", "pts");
 if(isset($_POST['upload']))
 				{
 					
@@ -383,7 +383,7 @@ if(isset($_POST['upload']))
 ?>><br><br>
 STUDENT-CELL:<input type='text'  name='s_cell' size="35"
 value=<?php
-$conn = new mysqli("139.59.88.82", "root","test@123", "pts");
+$conn = new mysqli("139.59.42.21", "root","test@123", "pts");
 if(isset($_POST['upload']))
 				{
 					
@@ -420,7 +420,7 @@ if(isset($_POST['upload']))
 				
 ?>><br><br>
 PARENT-CELL:<input type='text'  name='p_cell' size="35" value=<?php
-	$conn = new mysqli("139.59.88.82", "root","test@123", "pts");
+	$conn = new mysqli("139.59.42.21", "root","test@123", "pts");
 if(isset($_POST['upload']))
 				{
 					
@@ -457,7 +457,7 @@ if(isset($_POST['upload']))
 				
 ?>><br><br>
 PARENT-MAIL:<input type='text'  name='p_mail' size="35"value=<?php
-	$conn = new mysqli("139.59.88.82", "root","test@123", "pts");
+	$conn = new mysqli("139.59.42.21", "root","test@123", "pts");
 if(isset($_POST['upload']))
 				{
 					
@@ -497,7 +497,7 @@ if(isset($_POST['upload']))
 ---------------------------------------------------------------------------------------------------<BR>
    ADDRESS   :<input type='text'  name='address' size="35"
    value=<?php
-$conn = new mysqli("139.59.88.82", "root","test@123", "pts");
+$conn = new mysqli("139.59.42.21", "root","test@123", "pts");
 if(isset($_POST['upload']))
 				{
 					
@@ -535,7 +535,7 @@ if(isset($_POST['upload']))
 ?>><br><br>
 CITY:<input type='text'  name='city' size="35"
 value=<?php
-	$conn = new mysqli("139.59.88.82", "root","test@123", "pts");
+	$conn = new mysqli("139.59.42.21", "root","test@123", "pts");
 if(isset($_POST['upload']))
 				{
 					
@@ -573,7 +573,7 @@ if(isset($_POST['upload']))
 ?>><br><br>
 PIN:<input type='text'  name='pin' size="35"
 value=<?php
-$conn = new mysqli("139.59.88.82", "root","test@123", "pts");
+$conn = new mysqli("139.59.42.21", "root","test@123", "pts");
 if(isset($_POST['upload']))
 				{
 					
@@ -611,7 +611,7 @@ if(isset($_POST['upload']))
 ?>><br><br>
 STATE:<input type='text'  name='state' size="35"
 value=<?php
-	$conn = new mysqli("139.59.88.82", "root","test@123", "pts");
+	$conn = new mysqli("139.59.42.21", "root","test@123", "pts");
 	if(isset($_POST['upload']))
 				{
 					
@@ -655,7 +655,7 @@ value=<?php
 if(isset($_POST['del']))
 				{
 					
-				$conn = new mysqli("139.59.88.82", "root","test@123", "pts");
+				$conn = new mysqli("139.59.42.21", "root","test@123", "pts");
 					$rn=$_POST['rnumber'];
 					 if($conn)
 					 {

@@ -9,7 +9,7 @@ if(!isset($_SESSION['name'])) {
 
 <?php
 
-mysql_connect("139.59.88.82","root","test@123");
+mysql_connect("139.59.42.21","root","test@123");
 	mysql_select_db("pts");
 	
 if(isset($_POST['upload']))
@@ -123,7 +123,7 @@ if(isset($_POST['upload']))
 				<?php
 				if(isset($_POST['c_go']))
 				{
-					$conn = new mysqli("139.59.88.82", "root","test@123", "pts");
+					$conn = new mysqli("139.59.42.21", "root","test@123", "pts");
 					$cl=$_POST['class'];
 					$msg=$_POST['msg'];
 					 if($conn)
@@ -167,7 +167,7 @@ if(isset($_POST['upload']))
 <?php
 				if(isset($_POST['go']))
 				{
-					$conn = new mysqli("139.59.88.82", "root","test@123", "pts");
+					$conn = new mysqli("139.59.42.21", "root","test@123", "pts");
 					$cl=$_POST['rno'];
 					$msg=$_POST['msg'];
 					 if($conn)

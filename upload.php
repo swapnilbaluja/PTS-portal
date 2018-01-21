@@ -9,7 +9,7 @@ if(!isset($_SESSION['name'])) {
 
 <?php
 
-mysql_connect("139.59.88.82","root","test@123");
+mysql_connect("139.59.42.21","root","test@123");
 	mysql_select_db("pts");
 	
 if(isset($_POST['upload']))

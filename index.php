@@ -36,6 +36,8 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="index.php">Home</a></li>
+        <li class="active"><a href="#section1">Page1</a></li>
+        <li class="active"><a href="#section2">Page2</a></li>
        
        <li><a href="gallery.php">Gallery</a></li>
         <li class="dropdown">
