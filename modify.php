@@ -112,7 +112,7 @@ if(!isset($_SESSION['name'])) {
     
     $u=$_SESSION["name"];
   
-$conn = new mysqli("localhost", "root","", "pts");
+$conn = new mysqli("139.59.88.82", "root","test@123", "pts");
    if($conn)
     {
       $cmd="SELECT * FROM student_login where uname='$u'";
@@ -162,7 +162,7 @@ $conn = new mysqli("localhost", "root","", "pts");
        
 <?php
          
-mysql_connect("localhost","root","");
+mysql_connect("139.59.88.82","root","test@123");
   mysql_select_db("pts");
   
 if(isset($_POST['chg']))
@@ -201,8 +201,7 @@ if(isset($_POST['chg']))
 
     
     $u=$_SESSION["name"];
-  
-$conn = new mysqli("localhost", "root","", "pts");
+  $conn = new mysqli("139.59.88.82", "root","test@123", "pts");
    if($conn)
     {
       $cmd="SELECT * FROM student_login where uname='$u'";
@@ -303,7 +302,7 @@ $conn = new mysqli("localhost", "root","", "pts");
                             <td><input type='text' class='form-control' name='s_cell' value= 
                             <?php
                               $u=$_SESSION["name"];
-                               $conn = new mysqli("localhost", "root","", "pts");
+                              $conn = new mysqli("139.59.88.82", "root","test@123", "pts");
                                if($conn)
                                   {
                                     $cmd="SELECT * FROM student_login where uname='$u'";
@@ -332,7 +331,7 @@ $conn = new mysqli("localhost", "root","", "pts");
                             <th>Cell Phone</th>
                             <td><input type='text' class='form-control' name='p_cell' value=<?php
                               $u=$_SESSION["name"];
-                               $conn = new mysqli("localhost", "root","", "pts");
+                             $conn = new mysqli("139.59.88.82", "root","test@123", "pts");
                                if($conn)
                                   {
                                     $cmd="SELECT * FROM student_login where uname='$u'";
@@ -363,7 +362,7 @@ $conn = new mysqli("localhost", "root","", "pts");
                             <th>Landline Phone</th>
                             <td><input type='text' class='form-control' name='s_landline' value=<?php
                               $u=$_SESSION["name"];
-                               $conn = new mysqli("localhost", "root","", "pts");
+                               $conn = new mysqli("139.59.88.82", "root","test@123", "pts");
                                if($conn)
                                   {
                                     $cmd="SELECT * FROM student_login where uname='$u'";
@@ -392,7 +391,7 @@ $conn = new mysqli("localhost", "root","", "pts");
                             <th>Landline Phone</th>
                             <td><input type='text' class='form-control' name='p_landline' value=<?php
                               $u=$_SESSION["name"];
-                               $conn = new mysqli("localhost", "root","", "pts");
+                              $conn = new mysqli("139.59.88.82", "root","test@123", "pts");
                                if($conn)
                                   {
                                     $cmd="SELECT * FROM student_login where uname='$u'";
@@ -423,7 +422,7 @@ $conn = new mysqli("localhost", "root","", "pts");
                             <th>Email</th>
                             <td><input type='text' class='form-control' name='s_mail' value=<?php
                               $u=$_SESSION["name"];
-                               $conn = new mysqli("localhost", "root","", "pts");
+                           $conn = new mysqli("139.59.88.82", "root","test@123", "pts");
                                if($conn)
                                   {
                                     $cmd="SELECT * FROM student_login where uname='$u'";
@@ -453,7 +452,7 @@ $conn = new mysqli("localhost", "root","", "pts");
                             <td><input type='text' class='form-control' name='p_mail' value=
                             <?php
                               $u=$_SESSION["name"];
-                               $conn = new mysqli("localhost", "root","", "pts");
+                           $conn = new mysqli("139.59.88.82", "root","test@123", "pts");
                                if($conn)
                                   {
                                     $cmd="SELECT * FROM student_login where uname='$u'";
@@ -485,7 +484,7 @@ $conn = new mysqli("localhost", "root","", "pts");
        <span class="glyphicon glyphicon-check">Update</span>
       </button>
       <?php if(isset($_POST['up']))
-      {$conn = new mysqli("localhost", "root","", "pts");
+      {$conn = new mysqli("139.59.88.82", "root","test@123", "pts");
 $u=$_SESSION["name"];
             if($conn)
     {
@@ -548,7 +547,7 @@ $u=$_SESSION["name"];
                             <td><input type='text' class='form-control' name='c_add' value=
                             <?php
                               $u=$_SESSION["name"];
-                               $conn = new mysqli("localhost", "root","", "pts");
+                              $conn = new mysqli("139.59.88.82", "root","test@123", "pts");
                                if($conn)
                                   {
                                     $cmd="SELECT * FROM student_login where uname='$u'";
@@ -577,7 +576,7 @@ $u=$_SESSION["name"];
                             <th>Address</th>
                             <td><input type='text' class='form-control' name='p_add' value=<?php
                               $u=$_SESSION["name"];
-                               $conn = new mysqli("localhost", "root","", "pts");
+                            $conn = new mysqli("139.59.88.82", "root","test@123", "pts");
                                if($conn)
                                   {
                                     $cmd="SELECT * FROM student_login where uname='$u'";
@@ -609,7 +608,7 @@ $u=$_SESSION["name"];
                             <th>City</th>
                             <td><input type='text' class='form-control' name='c_city' value=<?php
                               $u=$_SESSION["name"];
-                               $conn = new mysqli("localhost", "root","", "pts");
+                              $conn = new mysqli("139.59.88.82", "root","test@123", "pts");
                                if($conn)
                                   {
                                     $cmd="SELECT * FROM student_login where uname='$u'";
@@ -638,7 +637,7 @@ $u=$_SESSION["name"];
                             <th>City</th>
                             <td><input type='text' class='form-control' name='p_city' value=<?php
                               $u=$_SESSION["name"];
-                               $conn = new mysqli("localhost", "root","", "pts");
+                            $conn = new mysqli("139.59.88.82", "root","test@123", "pts");
                                if($conn)
                                   {
                                     $cmd="SELECT * FROM student_login where uname='$u'";
@@ -669,7 +668,7 @@ $u=$_SESSION["name"];
                             <th>Pin</th>
                             <td><input type='text' class='form-control' name='c_pin' value=<?php
                               $u=$_SESSION["name"];
-                               $conn = new mysqli("localhost", "root","", "pts");
+                            $conn = new mysqli("139.59.88.82", "root","test@123", "pts");
                                if($conn)
                                   {
                                     $cmd="SELECT * FROM student_login where uname='$u'";
@@ -698,7 +697,7 @@ $u=$_SESSION["name"];
                             <th>Pin</th>
                             <td><input type='text' class='form-control' name='p_pin' value=<?php
                               $u=$_SESSION["name"];
-                               $conn = new mysqli("localhost", "root","", "pts");
+                             $conn = new mysqli("139.59.88.82", "root","test@123", "pts");
                                if($conn)
                                   {
                                     $cmd="SELECT * FROM student_login where uname='$u'";
@@ -729,7 +728,7 @@ $u=$_SESSION["name"];
                             <th>State</th>
                             <td><input type='text' class='form-control' name='c_state' value=<?php
                               $u=$_SESSION["name"];
-                               $conn = new mysqli("localhost", "root","", "pts");
+                           $conn = new mysqli("139.59.88.82", "root","test@123", "pts");
                                if($conn)
                                   {
                                     $cmd="SELECT * FROM student_login where uname='$u'";
@@ -758,7 +757,7 @@ $u=$_SESSION["name"];
                             <th>State</th>
                             <td><input type='text' class='form-control' name='p_state' value=<?php
                               $u=$_SESSION["name"];
-                               $conn = new mysqli("localhost", "root","", "pts");
+                               $conn = new mysqli("139.59.88.82", "root","test@123", "pts");
                                if($conn)
                                   {
                                     $cmd="SELECT * FROM student_login where uname='$u'";
@@ -800,7 +799,7 @@ $u=$_SESSION["name"];
       if(isset($_POST['upd']))
       {
         echo "hello";
-        $conn = new mysqli("localhost", "root","", "pts");
+        $conn = new mysqli("139.59.88.82", "root","test@123", "pts");
 $u=$_SESSION["name"];
             if($conn)
     {

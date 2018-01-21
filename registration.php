@@ -83,7 +83,7 @@ if(!isset($_SESSION['name'])) {
 </style>
 
 <head>
-  <title>Bootstrap Example</title>
+  <title>ABC School</title>
   
 </head>
 <body>
@@ -185,8 +185,7 @@ STATE:<input type='text'  name='state' size="35"required><br><br>
 
   
 if(isset($_POST['upload']))
-{
-	$conn = new mysqli("localhost", "root","", "pts");
+{$conn = new mysqli("139.59.88.82", "root","test@123", "pts");
    if($conn){
   
 					  $name=$_POST['name'];

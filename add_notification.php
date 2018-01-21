@@ -8,7 +8,8 @@ if(!isset($_SESSION['name'])) {
 ?>
 
 <?php
-mysql_connect("localhost","root","");
+
+mysql_connect("139.59.88.82","root","test@123");
 	mysql_select_db("pts");
 	
 if(isset($_POST['upload']))
@@ -73,8 +74,7 @@ if(isset($_POST['upload']))
           <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-education"></span> INSERT-MARKS</a>
           <ul class="dropdown-menu">
             <li><a href="insert.php">INSERT</a></li>
-            <li><a href="#">Page 1-2</a></li>
-            <li><a href="#">Page 1-3</a></li>
+            
           </ul>
         </li>
         <li><a href="upload.php"><span class="glyphicon glyphicon-tasks"></span> Add Assingments</a></li>
@@ -123,8 +123,7 @@ if(isset($_POST['upload']))
 				<?php
 				if(isset($_POST['c_go']))
 				{
-					
-					$conn = new mysqli("localhost", "root","", "pts");
+					$conn = new mysqli("139.59.88.82", "root","test@123", "pts");
 					$cl=$_POST['class'];
 					$msg=$_POST['msg'];
 					 if($conn)
@@ -168,8 +167,7 @@ if(isset($_POST['upload']))
 <?php
 				if(isset($_POST['go']))
 				{
-					
-					$conn = new mysqli("localhost", "root","", "pts");
+					$conn = new mysqli("139.59.88.82", "root","test@123", "pts");
 					$cl=$_POST['rno'];
 					$msg=$_POST['msg'];
 					 if($conn)

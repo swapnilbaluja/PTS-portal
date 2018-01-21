@@ -60,7 +60,8 @@ if(!isset($_SESSION['name'])) {
     session_start();
     $u=$_SESSION["name"];
   
-$conn = new mysqli("localhost", "root","", "pts");
+
+$conn = new mysqli("139.59.88.82", "root","test@123", "pts");
    if($conn)
     {
       $cmd="SELECT * FROM student_login where uname='$u'";
@@ -387,7 +388,8 @@ $conn = new mysqli("localhost", "root","", "pts");
         </thead>
         <tbody>
         <?php
-$conn = new mysqli("localhost", "root","", "pts");
+
+$conn = new mysqli("139.59.88.82", "root","test@123", "pts");
    if($conn)
     {
         
@@ -674,7 +676,8 @@ $conn = new mysqli("localhost", "root","", "pts");
         <tbody>
                     <?php
                     
-$conn = new mysqli("localhost", "root","", "pts");
+
+$conn = new mysqli("139.59.88.82", "root","test@123", "pts");
    if($conn)
     {
       if($_SESSION["class"]>=6){
@@ -942,7 +945,8 @@ $conn = new mysqli("localhost", "root","", "pts");
         <tbody>
             <?php
                     
-$conn = new mysqli("localhost", "root","", "pts");
+
+$conn = new mysqli("139.59.88.82", "root","test@123", "pts");
    if($conn)
     {
       if($_SESSION["class"]>=7){
@@ -1206,7 +1210,7 @@ $conn = new mysqli("localhost", "root","", "pts");
         <tbody>
            <?php
                     
-$conn = new mysqli("localhost", "root","", "pts");
+$conn = new mysqli("139.59.88.82", "root","test@123", "pts");
    if($conn)
     {
       if($_SESSION["class"]>=8){
@@ -1470,7 +1474,8 @@ $conn = new mysqli("localhost", "root","", "pts");
         </thead>
         <tbody>
             <?php
-$conn = new mysqli("localhost", "root","", "pts");
+
+$conn = new mysqli("139.59.88.82", "root","test@123", "pts");
    if($conn)
     {
       if($_SESSION["class"]>=9){
@@ -1738,7 +1743,8 @@ $conn = new mysqli("localhost", "root","", "pts");
         </thead>
         <tbody>
             <?php
-$conn = new mysqli("localhost", "root","", "pts");
+
+$conn = new mysqli("139.59.88.82", "root","test@123", "pts");
    if($conn)
     {
       if($_SESSION["class"]>=10){
@@ -2003,7 +2009,7 @@ $conn = new mysqli("localhost", "root","", "pts");
         <tbody>
             <?php
                    
-$conn = new mysqli("localhost", "root","", "pts");
+$conn = new mysqli("139.59.88.82", "root","test@123", "pts");
    if($conn)
     {
       if($_SESSION["class"]>=11){
@@ -2246,7 +2252,7 @@ $conn = new mysqli("localhost", "root","", "pts");
         <tbody>
             <?php
                     
-$conn = new mysqli("localhost", "root","", "pts");
+$conn = new mysqli("139.59.88.82", "root","test@123", "pts");
    if($conn)
     {
       if($_SESSION["class"]>=12){
