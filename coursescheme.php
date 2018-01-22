@@ -330,8 +330,7 @@ $conn = new mysqli("localhost", "root","test@123", "pts");
           <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-education"></span> Course</a>
           <ul class="dropdown-menu">
             <li><a href="coursescheme.php">Course Scheme</a></li>
-            <li><a href="#">Page 1-2</a></li>
-            <li><a href="#">Page 1-3</a></li>
+            
           </ul>
         </li>
         <li><a href="assignment.php"><span class="glyphicon glyphicon-tasks"></span> Assingments</a></li>
@@ -413,7 +412,7 @@ $conn = new mysqli("localhost", "root","test@123", "pts");
                     {
                         $subinfo="SELECT * FROM subject_code WHERE scode='$t[1]'";
                         $r=$_SESSION['rollnumber'];
-                        $mark="SELECT * FROM SHI01 WHERE rollnumber=$r";
+                        $mark="SELECT * FROM shi01 WHERE rollnumber=$r";
                        
                        
                         if($fin=$conn->query($subinfo))
@@ -556,7 +555,7 @@ $conn = new mysqli("localhost", "root","test@123", "pts");
                     {
                         $subinfo="SELECT * FROM subject_code WHERE scode='$t[5]'";
                        $r=$_SESSION['rollnumber'];
-                        $mark="SELECT * FROM SSSC01 WHERE rollnumber=$r";
+                        $mark="SELECT * FROM sssc01 WHERE rollnumber=$r";
                        
                         if($fin=$conn->query($subinfo))
                         {
@@ -591,7 +590,7 @@ $conn = new mysqli("localhost", "root","test@123", "pts");
                     {
                                $subinfo="SELECT * FROM subject_code WHERE scode='$t[6]'";
                        $r=$_SESSION['rollnumber'];
-                        $mark="SELECT * FROM SMTH01 WHERE rollnumber=$r";
+                        $mark="SELECT * FROM smth01 WHERE rollnumber=$r";
                        
                         if($fin=$conn->query($subinfo))
                         {
@@ -693,7 +692,7 @@ $conn = new mysqli("localhost", "root","test@123", "pts");
                     {
                                 $subinfo="SELECT * FROM subject_code WHERE scode='$t[1]'";
                        $r=$_SESSION['rollnumber'];
-                        $mark="SELECT * FROM SHI02 WHERE rollnumber=$r";
+                        $mark="SELECT * FROM shi02 WHERE rollnumber=$r";
                        
                         if($fin=$conn->query($subinfo))
                         {
@@ -728,7 +727,7 @@ $conn = new mysqli("localhost", "root","test@123", "pts");
                     {
                                $subinfo="SELECT * FROM subject_code WHERE scode='$t[2]'";
                        $r=$_SESSION['rollnumber'];
-                        $mark="SELECT * FROM SPU02 WHERE rollnumber=$r";
+                        $mark="SELECT * FROM spu2 WHERE rollnumber=$r";
                        
                         if($fin=$conn->query($subinfo))
                         {
@@ -763,7 +762,7 @@ $conn = new mysqli("localhost", "root","test@123", "pts");
                     {
                          $subinfo="SELECT * FROM subject_code WHERE scode='$t[3]'";
                        $r=$_SESSION['rollnumber'];
-                        $mark="SELECT * FROM SENGI02 WHERE rollnumber=$r";
+                        $mark="SELECT * FROM sengi02 WHERE rollnumber=$r";
                        
                         if($fin=$conn->query($subinfo))
                         {
@@ -796,7 +795,7 @@ $conn = new mysqli("localhost", "root","test@123", "pts");
                     {
                                $subinfo="SELECT * FROM subject_code WHERE scode='$t[4]'";
                        $r=$_SESSION['rollnumber'];
-                        $mark="SELECT * FROM SSST02 WHERE rollnumber=$r";
+                        $mark="SELECT * FROM ssst02 WHERE rollnumber=$r";
                        
                         if($fin=$conn->query($subinfo))
                         {
@@ -831,7 +830,7 @@ $conn = new mysqli("localhost", "root","test@123", "pts");
                                $subinfo="SELECT * FROM subject_code WHERE scode='$t[5]'";
                        
                        $r=$_SESSION['rollnumber'];
-                        $mark="SELECT * FROM SSSC02 WHERE rollnumber=$r";
+                        $mark="SELECT * FROM sssc02 WHERE rollnumber=$r";
                         if($fin=$conn->query($subinfo))
                         {
                             $mark1=$conn->query($mark);
@@ -864,7 +863,7 @@ $conn = new mysqli("localhost", "root","test@123", "pts");
                     {$subinfo="SELECT * FROM subject_code WHERE scode='$t[6]'";
                        
                        $r=$_SESSION['rollnumber'];
-                        $mark="SELECT * FROM SMTH02 WHERE rollnumber=$r";
+                        $mark="SELECT * FROM smth02 WHERE rollnumber=$r";
                         if($fin=$conn->query($subinfo))
                         {
                             $mark1=$conn->query($mark);
@@ -961,7 +960,7 @@ $conn = new mysqli("localhost", "root","test@123", "pts");
                     {
                                $subinfo="SELECT * FROM subject_code WHERE scode='$t[1]'";
                        $r=$_SESSION['rollnumber'];
-                        $mark="SELECT * FROM SHI03 WHERE rollnumber=$r";
+                        $mark="SELECT * FROM shi03 WHERE rollnumber=$r";
                        
                         if($fin=$conn->query($subinfo))
                         {
@@ -995,7 +994,7 @@ $conn = new mysqli("localhost", "root","test@123", "pts");
                     {
                                $subinfo="SELECT * FROM subject_code WHERE scode='$t[2]'";
                        $r=$_SESSION['rollnumber'];
-                        $mark="SELECT * FROM SPU03 WHERE rollnumber=$r";
+                        $mark="SELECT * FROM spu03 WHERE rollnumber=$r";
                        
                         if($fin=$conn->query($subinfo))
                         {
@@ -1028,7 +1027,7 @@ $conn = new mysqli("localhost", "root","test@123", "pts");
              if($t[3])
                     {$subinfo="SELECT * FROM subject_code WHERE scode='$t[3]'";
                        $r=$_SESSION['rollnumber'];
-                        $mark="SELECT * FROM SENGI03 WHERE rollnumber=$r";
+                        $mark="SELECT * FROM sengi03 WHERE rollnumber=$r";
                        
                         if($fin=$conn->query($subinfo))
                         {
@@ -1061,7 +1060,7 @@ $conn = new mysqli("localhost", "root","test@123", "pts");
                     {
                                $subinfo="SELECT * FROM subject_code WHERE scode='$t[4]'";
                        $r=$_SESSION['rollnumber'];
-                        $mark="SELECT * FROM SSST03 WHERE rollnumber=$r";
+                        $mark="SELECT * FROM ssst03 WHERE rollnumber=$r";
                        
                         if($fin=$conn->query($subinfo))
                         {
@@ -1096,7 +1095,7 @@ $conn = new mysqli("localhost", "root","test@123", "pts");
                                $subinfo="SELECT * FROM subject_code WHERE scode='$t[5]'";
                        
                        $r=$_SESSION['rollnumber'];
-                        $mark="SELECT * FROM SSSC03 WHERE rollnumber=$r";
+                        $mark="SELECT * FROM sssc03 WHERE rollnumber=$r";
                         if($fin=$conn->query($subinfo))
                         {
                             $mark1=$conn->query($mark);
@@ -1130,7 +1129,7 @@ $conn = new mysqli("localhost", "root","test@123", "pts");
                                $subinfo="SELECT * FROM subject_code WHERE scode='$t[6]'";
                        
                        $r=$_SESSION['rollnumber'];
-                        $mark="SELECT * FROM SMTH03 WHERE rollnumber=$r";
+                        $mark="SELECT * FROM smth03 WHERE rollnumber=$r";
                         if($fin=$conn->query($subinfo))
                         {
                             $mark1=$conn->query($mark);
@@ -1224,7 +1223,8 @@ $conn = new mysqli("localhost", "root","test@123", "pts");
                     if($t[1])
                     {
                                $subinfo="SELECT * FROM subject_code WHERE scode='$t[1]'";
-                       
+                       $r=$_SESSION['rollnumber'];
+                        $mark="SELECT * FROM shi04 WHERE rollnumber=$r";
                        
                         if($fin=$conn->query($subinfo))
                         {
@@ -1258,7 +1258,7 @@ $conn = new mysqli("localhost", "root","test@123", "pts");
                     {
                                $subinfo="SELECT * FROM subject_code WHERE scode='$t[2]'";
                        $r=$_SESSION['rollnumber'];
-                        $mark="SELECT * FROM SHI01 WHERE rollnumber=$r";
+                        $mark="SELECT * FROM spu04 WHERE rollnumber=$r";
                        
                         if($fin=$conn->query($subinfo))
                         {
@@ -1292,7 +1292,7 @@ $conn = new mysqli("localhost", "root","test@123", "pts");
                     {
                                 $subinfo="SELECT * FROM subject_code WHERE scode='$t[3]'";
                        $r=$_SESSION['rollnumber'];
-                        $mark="SELECT * FROM SHI01 WHERE rollnumber=$r";
+                        $mark="SELECT * FROM sengi04 WHERE rollnumber=$r";
                        
                         if($fin=$conn->query($subinfo))
                         {
@@ -1325,7 +1325,7 @@ $conn = new mysqli("localhost", "root","test@123", "pts");
                                $subinfo="SELECT * FROM subject_code WHERE scode='$t[4]'";
                        
                        $r=$_SESSION['rollnumber'];
-                        $mark="SELECT * FROM SHI01 WHERE rollnumber=$r";
+                        $mark="SELECT * FROM ssst04 WHERE rollnumber=$r";
                         if($fin=$conn->query($subinfo))
                         {
                             $mark1=$conn->query($mark);
@@ -1358,7 +1358,7 @@ $conn = new mysqli("localhost", "root","test@123", "pts");
                     {
                                $subinfo="SELECT * FROM subject_code WHERE scode='$t[5]'";
                        $r=$_SESSION['rollnumber'];
-                        $mark="SELECT * FROM SHI01 WHERE rollnumber=$r";
+                        $mark="SELECT * FROM sssc04 WHERE rollnumber=$r";
                        
                         if($fin=$conn->query($subinfo))
                         {
@@ -1392,7 +1392,7 @@ $conn = new mysqli("localhost", "root","test@123", "pts");
                     {
                                $subinfo="SELECT * FROM subject_code WHERE scode='$t[6]'";
                        $r=$_SESSION['rollnumber'];
-                        $mark="SELECT * FROM SMTH03 WHERE rollnumber=$r";
+                        $mark="SELECT * FROM smth04 WHERE rollnumber=$r";
                        
                         if($fin=$conn->query($subinfo))
                         {
@@ -1489,7 +1489,7 @@ $conn = new mysqli("localhost", "root","test@123", "pts");
                     {
                                $subinfo="SELECT * FROM subject_code WHERE scode='$t[1]'";
                        $r=$_SESSION['rollnumber'];
-                        $mark="SELECT * FROM SHI05 WHERE rollnumber=$r";
+                        $mark="SELECT * FROM shi05 WHERE rollnumber=$r";
                        
                         if($fin=$conn->query($subinfo))
                         {
@@ -1523,7 +1523,7 @@ $conn = new mysqli("localhost", "root","test@123", "pts");
                     {
                                $subinfo="SELECT * FROM subject_code WHERE scode='$t[2]'";
                        $r=$_SESSION['rollnumber'];
-                        $mark="SELECT * FROM SPU05 WHERE rollnumber=$r";
+                        $mark="SELECT * FROM spu05 WHERE rollnumber=$r";
                        
                         if($fin=$conn->query($subinfo))
                         {
@@ -1557,7 +1557,7 @@ $conn = new mysqli("localhost", "root","test@123", "pts");
                     {
                                 $subinfo="SELECT * FROM subject_code WHERE scode='$t[3]'";
                        $r=$_SESSION['rollnumber'];
-                        $mark="SELECT * FROM SENGI05 WHERE rollnumber=$r";
+                        $mark="SELECT * FROM sengi05 WHERE rollnumber=$r";
                        
                         if($fin=$conn->query($subinfo))
                         {
@@ -1590,7 +1590,7 @@ $conn = new mysqli("localhost", "root","test@123", "pts");
                     {
                                $subinfo="SELECT * FROM subject_code WHERE scode='$t[4]'";
                        $r=$_SESSION['rollnumber'];
-                        $mark="SELECT * FROM SSST05 WHERE rollnumber=$r";
+                        $mark="SELECT * FROM ssst05 WHERE rollnumber=$r";
                        
                         if($fin=$conn->query($subinfo))
                         {
@@ -1624,7 +1624,7 @@ $conn = new mysqli("localhost", "root","test@123", "pts");
                     {
                                 $subinfo="SELECT * FROM subject_code WHERE scode='$t[5]'";
                        $r=$_SESSION['rollnumber'];
-                        $mark="SELECT * FROM SSSC05  WHERE rollnumber=$r";
+                        $mark="SELECT * FROM sssc05  WHERE rollnumber=$r";
                        
                         if($fin=$conn->query($subinfo))
                         {
@@ -1659,7 +1659,7 @@ $conn = new mysqli("localhost", "root","test@123", "pts");
                     {
                                 $subinfo="SELECT * FROM subject_code WHERE scode='$t[6]'";
                        $r=$_SESSION['rollnumber'];
-                        $mark="SELECT * FROM SMTH05 WHERE rollnumber=$r";
+                        $mark="SELECT * FROM smth05 WHERE rollnumber=$r";
                        
                         if($fin=$conn->query($subinfo))
                         {
@@ -1757,7 +1757,7 @@ $conn = new mysqli("localhost", "root","test@123", "pts");
                     {
                                $subinfo="SELECT * FROM subject_code WHERE scode='$t[1]'";
                        $r=$_SESSION['rollnumber'];
-                        $mark="SELECT * FROM SHI06 WHERE rollnumber=$r";
+                        $mark="SELECT * FROM shi06 WHERE rollnumber=$r";
                        
                         if($fin=$conn->query($subinfo))
                         {
@@ -1792,7 +1792,7 @@ $conn = new mysqli("localhost", "root","test@123", "pts");
                     {
                                $subinfo="SELECT * FROM subject_code WHERE scode='$t[2]'";
                        $r=$_SESSION['rollnumber'];
-                        $mark="SELECT * FROM SPU06 WHERE rollnumber=$r";
+                        $mark="SELECT * FROM spu06 WHERE rollnumber=$r";
                        
                         if($fin=$conn->query($subinfo))
                         {
@@ -1826,7 +1826,7 @@ $conn = new mysqli("localhost", "root","test@123", "pts");
                     {
                                 $subinfo="SELECT * FROM subject_code WHERE scode='$t[3]'";
                        $r=$_SESSION['rollnumber'];
-                        $mark="SELECT * FROM SENGI06 WHERE rollnumber=$r";
+                        $mark="SELECT * FROM sengi06 WHERE rollnumber=$r";
                        
                         if($fin=$conn->query($subinfo))
                         {
@@ -1859,7 +1859,7 @@ $conn = new mysqli("localhost", "root","test@123", "pts");
                     {
                                  $subinfo="SELECT * FROM subject_code WHERE scode='$t[4]'";
                        $r=$_SESSION['rollnumber'];
-                        $mark="SELECT * FROM SSST06 WHERE rollnumber=$r";
+                        $mark="SELECT * FROM ssst06 WHERE rollnumber=$r";
                        
                         if($fin=$conn->query($subinfo))
                         {
@@ -1891,7 +1891,7 @@ $conn = new mysqli("localhost", "root","test@123", "pts");
                     {
                                 $subinfo="SELECT * FROM subject_code WHERE scode='$t[5]'";
                        $r=$_SESSION['rollnumber'];
-                        $mark="SELECT * FROM SSSC06 WHERE rollnumber=$r";
+                        $mark="SELECT * FROM sssc06 WHERE rollnumber=$r";
                        
                         if($fin=$conn->query($subinfo))
                         {
@@ -1925,7 +1925,7 @@ $conn = new mysqli("localhost", "root","test@123", "pts");
                     {
                                 $subinfo="SELECT * FROM subject_code WHERE scode='$t[6]'";
                        $r=$_SESSION['rollnumber'];
-                        $mark="SELECT * FROM SMTH06 WHERE rollnumber=$r";
+                        $mark="SELECT * FROM smth06 WHERE rollnumber=$r";
                        
                         if($fin=$conn->query($subinfo))
                         {
@@ -2003,7 +2003,7 @@ $conn = new mysqli("localhost", "root","test@123", "pts");
         <tbody>
             <?php
                    
-$conn = new mysqli("localhost", "root","test@123", "pts");
+$conn = new mysqli("localhost", "root","", "pts");
    if($conn)
     {
       if($_SESSION["class"]>=11){
@@ -2246,7 +2246,7 @@ $conn = new mysqli("localhost", "root","test@123", "pts");
         <tbody>
             <?php
                     
-$conn = new mysqli("localhost", "root","test@123", "pts");
+$conn = new mysqli("localhost", "root","", "pts");
    if($conn)
     {
       if($_SESSION["class"]>=12){
