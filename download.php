@@ -1,5 +1,5 @@
 <?php
-mysql_connect("localhost","root","");
+mysql_connect("localhost","root","test@123");
 mysql_select_db("file");
 $query=mysql_query("select * from upload");
 $rowcount=mysql_num_rows($query);

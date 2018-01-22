@@ -38,13 +38,13 @@
         <li class="active"><a href="index.php">Home</a></li>
         <li><a href="#section2">Page 2</a></li>
         <li><a href="#section3">Page 3</a></li>
-       <li><a href="gallery.html">Gallery</a></li>
+       <li><a href="gallery.php">Gallery</a></li>
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 4 <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#section41">Page 1-1</a></li>
             <li><a href="#section42">Page 1-2</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#section5">Contact</a></li>
           </ul>
         </li>
        

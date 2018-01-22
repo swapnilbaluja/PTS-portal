@@ -111,7 +111,7 @@ if(!isset($_SESSION['name'])) {
     
     $u=$_SESSION["name"];
   
-$conn = new mysqli("localhost", "root","", "pts");
+$conn = new mysqli("localhost", "root","test@123", "pts");
    if($conn)
     {
       $cmd="SELECT * FROM student_login where uname='$u'";
@@ -167,7 +167,7 @@ $conn = new mysqli("localhost", "root","", "pts");
     
     $u=$_SESSION["name"];
   
-$conn = new mysqli("localhost", "root","", "pts");
+$conn = new mysqli("localhost", "root","test@123", "pts");
    if($conn)
     {
       $cmd="SELECT * FROM student_login where uname='$u'";
@@ -245,7 +245,7 @@ $conn = new mysqli("localhost", "root","", "pts");
     
     $u=$_SESSION["name"];
   
-$conn = new mysqli("localhost", "root","", "pts");
+$conn = new mysqli("localhost", "root","test@123", "pts");
    if($conn)
     {
       $cmd="SELECT * FROM student_login where uname='$u'";
@@ -339,7 +339,7 @@ $conn = new mysqli("localhost", "root","", "pts");
     
     $u=$_SESSION["name"];
   
-$conn = new mysqli("localhost", "root","", "pts");
+$conn = new mysqli("localhost", "root","test@123", "pts");
    if($conn)
     {
       $cmd="SELECT * FROM student_login where uname='$u'";

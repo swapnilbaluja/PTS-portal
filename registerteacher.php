@@ -83,7 +83,7 @@ if(!isset($_SESSION['name'])) {
 </style>
 
 <head>
-  <title>Bootstrap Example</title>
+  <title>ABC SCHOOL</title>
   
 </head>
 <body>
@@ -168,7 +168,7 @@ DEFAULT-PWD:<input type='text'  name='pwd' size="35"required><br><br>
   
 if(isset($_POST['upload']))
 {
-	$conn = new mysqli("localhost", "root","", "pts");
+	$conn = new mysqli("localhost", "root","test@123", "pts");
    if($conn){
   
 					  $name=$_POST['name'];

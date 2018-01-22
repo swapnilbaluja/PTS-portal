@@ -60,7 +60,7 @@ if(!isset($_SESSION['name'])) {
     session_start();
     $u=$_SESSION["name"];
   
-$conn = new mysqli("localhost", "root","", "pts");
+$conn = new mysqli("localhost", "root","test@123", "pts");
    if($conn)
     {
       $cmd="SELECT * FROM student_login where uname='$u'";
@@ -387,7 +387,7 @@ $conn = new mysqli("localhost", "root","", "pts");
         
 
         <?php
-mysql_connect("localhost","root","");
+mysql_connect("localhost","root","test@123");
 mysql_select_db("pts");
 $std=$_SESSION["class"];
 $query=mysql_query("select * from assignment where std=$std");

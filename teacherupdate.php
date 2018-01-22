@@ -82,7 +82,7 @@ if(!isset($_SESSION['name'])) {
 </style>
 
 <head>
-  <title>Bootstrap Example</title>
+  <title>ABC SCHOOL</title>
   
 </head>
 <body>
@@ -151,7 +151,7 @@ Teacher-NUMBER:<input type='text'  name='tnumber' size="35"required><br><br>
 
 Teacher-Name:<input type='text'  name='tname'  value=
 <?php
-	$conn = new mysqli("localhost", "root","", "pts");
+	$conn = new mysqli("localhost", "root","test@123", "pts");
 if(isset($_POST['upload']))
 				{
 					
@@ -196,7 +196,7 @@ if(isset($_POST['upload']))
 if(isset($_POST['del']))
 				{
 					
-					$conn = new mysqli("localhost", "root","", "pts");
+					$conn = new mysqli("localhost", "root","test@123", "pts");
 					$tn=$_POST['tnumber'];
 					 if($conn)
 					 {

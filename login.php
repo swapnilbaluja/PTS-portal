@@ -127,12 +127,12 @@ span.psw {
     <input type="password" placeholder="Enter Password" name="psw" autocomplete="off"  required>
         
     <button type="" name="b1">Login</button>
-    <input type="checkbox" checked="checked"> Remember me
+    
   </div>
 
   <div class="container" style="background-color:#f1f1f1">
 
-    <span class="psw">Forgot <a href="#">password?</a></span>
+    
   </div>
   
 

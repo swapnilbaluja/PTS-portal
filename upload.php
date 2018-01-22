@@ -8,7 +8,7 @@ if(!isset($_SESSION['name'])) {
 ?>
 
 <?php
-mysql_connect("localhost","root","");
+mysql_connect("localhost","root","test@123");
 	mysql_select_db("pts");
 	
 if(isset($_POST['upload']))
